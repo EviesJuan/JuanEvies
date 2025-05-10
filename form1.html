@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orden de Trabajo</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Cargar jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Cargar la extensión AutoTable para jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.22/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Orden De Trabajo</h1>
+  </header>
+
+  <main>
+    <form id="form1">
+      <!-- Permiso de Consignación -->
+      <label for="permisoConsignacion">Permiso de Consignación:</label>
+      <input type="text" id="permisoConsignacion" name="permisoConsignacion" required>
+
+      <!-- Fecha -->
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha" required lang="es">
+
+      <!-- Día -->
+      <label for="dia">Día:</label>
+      <input type="text" id="dia" name="dia" required>
+
+      <!-- Instalación (Dropdown) -->
+      <label for="instalacion">Instalación:</label>
+      <select id="instalacion" name="instalacion" required>
+        <option value="Acarigua I 115 KV">Acarigua I 115 KV</option>
+        <option value="Acarigua II">Acarigua II</option>
+        <option value="Acarigua II 230">Acarigua II 230</option>
+        <option value="Araure">Araure</option>
+        <option value="Turen">Turen</option>
+        <option value="Turen II">Turen II</option>
+        <option value="Guanare">Guanare</option>
+        <option value="Las Flores">Las Flores</option>
+        <option value="Ospino">Ospino</option>
+        <option value="San Rafael">San Rafael</option>
+        <option value="Biscucuy">Biscucuy</option>
+      </select>
+
+      <label for="linea">Lineas:</label>
+      <select id="linea" name="linea" required>
+        <option value="Instalación: Acarigua I - Ospino"> Acarigua I - Ospino</option>
+        <option value="Instalación: Acarigua II - Acarigua I"> Acarigua II - Acarigua I  T1</option>
+        <option value="Instalacion: Acarigua II - Acarigua I"> Acarigua II - Acarigua I  T2</option>
+        <option value="Instalación: Guanare Central">Acarigua II - Araure</option>
+        <option value="Instalacion: Acarigua II - San Rafeal"> Acarigua II - San Rafael</option>
+        <option value="Instalacion: Acarigua II - Turen II"> Acarigua II - Turen II</option>
+        <option value="Instalacion: Araure - Guanare"> Araure - Guanare</option>
+        <option value="Instalacion: Cabudare - Acarigua I"> Cabudare - Acarigua I</option>
+        <option value="Instalacion: Las Flores - Biscucuy"> Las Flores - Biscucuy</option>
+        <option value="Instalacion: Guanare - Las Flores"> Guanare - Las Flores</option>
+        <option value="Instalacion: Ospino - Guanare"> Ospino - Guanare</option>
+        <option value="Instalacion: Turen - Playon" > Turen - Playon</option>
+        <option value="Instalacion: Turen II - Turen"> Turen II - Turen</option>
+        <option value="Instalacion: Acarigua II - Barinas IV 230KV"> Acarigua II - Barinas IV 230KV</option>
+        <option value="Instalacion: Acarigua II - Las Flores 230KV"> Acarigua II - Las FLores 230KV</option>
+        <option value="Instalacion: Las Flores - Barinas IV 230KV"> Las Flores - Barinas IV 230KV</option> 
+      </select>
+
+      <label for="Equipo">Equipo:</label>
+      <select id="Equipo" name="Equipo" required>
+        
+      </select>
+
+      <!-- Vehículo / Modelo / Placa -->
+      <label for="vehiculo">Vehículo:</label>
+      <input type="text" id="vehiculo" name="vehiculo" placeholder="Ej: Camión" required>
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" placeholder="Ej: 2022" required>
+
+      <label for="placa">Placa:</label>
+      <input type="text" id="placa" name="placa" placeholder="Ej: ABC-123" required>
+
+      <button type="submit">Generar PDF</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Proyecto Perfiles</p>
+  </footer>
+
+  <!-- Ruta del archivo JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

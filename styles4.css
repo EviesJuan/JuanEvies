@@ -1,0 +1,202 @@
+/* Reset de algunos estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4e73df;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section.section-box {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  color: #4e73df;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #4e73df;
+  padding-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.row label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #333;
+  margin-right: 10px;
+  width: 45%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #4e73df;
+  outline: none;
+}
+
+button#generate-pdf {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #4e73df;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#generate-pdf:hover {
+  background-color: #375a8c;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsivo para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .page-container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  button#generate-pdf {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}
+
+/* Responsivo para pantallas medianas (tablets) */
+@media (max-width: 992px) {
+  .page-container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .row label {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  button#generate-pdf {
+    font-size: 1rem;
+  }
+}
+
+/* Responsivo para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  body {
+    padding: 10px;
+  }
+
+  .page-container {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.1rem;
+  }
+
+  textarea {
+    height: 80px;
+  }
+
+  button#generate-pdf {
+    font-size: 0.95rem;
+    padding: 10px 0;
+  }
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
